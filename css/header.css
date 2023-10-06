@@ -4,6 +4,8 @@ body {
 }
 
 header {
+    /* Safari compat */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -17,14 +19,6 @@ header {
     position: static;
 }
 
-.circle {
-    height: 200px;
-    width: 200px;
-    background-color: #333;
-    display: inline-block;
-    border-radius: 50%;
-}
-
 ul.horizontal {
     list-style: none;
     margin: 0;
@@ -33,12 +27,10 @@ ul.horizontal {
     background-color: #333;
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0 8px 4px;
 }
 
-
 li.horizontal a {
-    display: block;
+    display: none;
     font-family: sans-serif;
     color: white;
     text-align: center;
@@ -57,6 +49,20 @@ li.horizontal a.active {
 
 li.horizontal a.active:hover {
     background-color: #222;
+}
+
+li.horizontal a.sidebutton {
+    display: block;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 24px 24px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+li.horizontal a.sidebutton:hover {
+    background-color: #111;
 }
 
 ul.vertical {
@@ -98,11 +104,21 @@ li.vertical a.active:hover {
 }
 
 #sideMenu {
-    display: block;
+    position: absolute;
+    display: none;
     float: right;
     right: 0;
     top: 66px;
     background-color: #333;
     width: 20%;
-    height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+    li.horizontal a {
+        display: block;
+    }
+
+    li.horizontal a.sidebutton {
+        display: none;
+    }
 }
