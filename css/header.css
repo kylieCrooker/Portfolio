@@ -8,49 +8,101 @@ header {
     top: 0;
 }
 
-header ul {
+#banner {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png");
+    background-size: cover;
+    background-position-y: 55%;
+    height: 30vh;
+    width: 100%;
+    position: static;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+ul.horizontal {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 8px 4px;
 }
 
-li {
-    float: right;
-}
 
-li a {
+li.horizontal a {
     display: block;
     font-family: sans-serif;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 24px 16px;
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
-li a:hover {
+li.horizontal a:hover {
     background-color: #111;
 }
 
-li a.active {
+li.horizontal a.active {
     background-color: #444;
 }
 
-li a.active:hover {
+li.horizontal a.active:hover {
+    background-color: #222;
+}
+
+ul.vertical {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+li.vertical a {
+    display: block;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+li.vertical a:hover {
+    background-color: #111;
+}
+
+li.vertical a.active {
+    background-color: #444;
+}
+
+li.vertical a.active:hover {
     background-color: #222;
 }
 
 #progress {
     height: 15px;
-    background-color: blue;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);
     width: 0;
 }
 
-div.mainText {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 64px;
+#sideMenu {
+    display: block;
+    float: right;
+    right: 0;
+    top: 66px;
+    background-color: #333;
+    width: 20%;
+    height: 100vh;
 }
