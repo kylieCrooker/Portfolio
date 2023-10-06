@@ -2,21 +2,34 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="javascript/progress.js"></script>
 </head>
 
 <body onscroll="scrollProgress()">
+    <div id="banner"></div>
     <header>
-        <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-        <div id="progress"></div>
+        <div id="header">
+            <ul class="horizontal">
+                <li class="horizontal"><a class="active" href="">Home</a></li>
+                <li class="horizontal"><a href="">About</a></li>
+                <li class="horizontal"><a href="">Services</a></li>
+                <li class="horizontal"><a href="">Contact Us</a></li>
+            </ul>
+            <div id="progress"></div>
+            <div class="sideMenu" id="sideMenu">
+                <ul class="vertical">
+                    <li class="vertical"><a class="active" href="">Home</a></li>
+                    <li class="vertical"><a href="">About</a></li>
+                    <li class="vertical"><a href="">Services</a></li>
+                    <li class="vertical"><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <div class="mainText">
+    <div id="main">
         <p>This is a test!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod et impedit alias facere corporis, adipisci
             ipsam
