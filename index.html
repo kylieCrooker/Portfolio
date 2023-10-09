@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="javascript/progress.js"></script>
-    <script src="javascript/toggleside.js"></script>
+    <script src="javascript/universal.js"></script>
 </head>
 
 <body onscroll="scrollProgress()">
@@ -18,8 +17,12 @@
                 <li class="horizontal"><a href="">About</a></li>
                 <li class="horizontal"><a href="">Services</a></li>
                 <li class="horizontal"><a href="">Contact Us</a></li>
-                <li class="horizontal"><a class=" active sidebutton" href="javascript:void(0);"
-                        onclick="toggleside()">test</a>
+                <li class="horizontal">
+                    <a class="active sidebutton" href="javascript:void(0);" onclick="toggleside()">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </a>
                 </li>
             </ul>
             <div id="progress"></div>
