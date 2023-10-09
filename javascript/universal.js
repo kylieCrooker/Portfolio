@@ -1,3 +1,11 @@
+window.onload = eventListeners();
+
+function eventListeners() {
+    const sidebutton = document.getElementById("sidebutton");
+    console.log(sidebutton);
+    sidebutton.addEventListener("click", toggleside());
+}
+
 function scrollProgress() {
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     let max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
