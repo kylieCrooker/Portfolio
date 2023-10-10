@@ -10,15 +10,6 @@ header {
     top: 0;
 }
 
-#banner {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png");
-    background-size: cover;
-    background-position-y: 55%;
-    height: 30vh;
-    width: 100%;
-    position: static;
-}
-
 ul.horizontal {
     list-style: none;
     margin: 0;
