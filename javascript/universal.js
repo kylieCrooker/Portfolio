@@ -1,9 +1,7 @@
-window.onload = eventListeners();
-
-function eventListeners() {
-    const sidebutton = document.getElementById("sidebutton");
-    console.log(sidebutton);
-    sidebutton.addEventListener("click", toggleside());
+window.onload = function loadListeners() {
+    document.body.onscroll = scrollProgress;
+    document.getElementById("sidebutton").onclick = toggleSide;
+    window.onresize = closeSide;
 }
 
 function scrollProgress() {
