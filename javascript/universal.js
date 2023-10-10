@@ -4,6 +4,8 @@ window.onload = function loadListeners() {
     window.onresize = closeSide;
 }
 
+
+
 function scrollProgress() {
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     let max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -22,22 +24,41 @@ function scrollProgress() {
     }
 };
 
-function toggleside() {
+function toggleSide() {
     let sidemenu = document.getElementById("sideMenu");
+    let sidebutton = document.getElementById("sidebutton");
     let visibility = window.getComputedStyle(sidemenu).getPropertyValue("display");
-    let menubars = document.getElementsByClassName("bar")
+    let menubars = document.getElementsByClassName("bar");
 
     console.log(menubars);
 
     if (visibility == "none") {
+        console.log("Showing sidemenu");
         sidemenu.style.display = "block";
     } else {
+        console.log("Hiding sidemenu...")
         sidemenu.style.display = "none";
     }
     scrollProgress();
 
-    for (let i = 0; i < menubars.length; i++) {
-        menubars[i].classList.toggle("change");
-        console.log([i]);
+    sidebutton.classList.toggle("change");
+}
+
+function closeSide() {
+    let sidemenu = document.getElementById("sideMenu");
+    let sidebutton = document.getElementById("sidebutton");
+    let visibilityMenu = window.getComputedStyle(sidemenu).getPropertyValue("display");
+    let visibilityButton = window.getComputedStyle(sidebutton).getPropertyValue("display");
+    console.log("Running closeSide function...");
+
+    if (visibilityButton == "none" && visibilityMenu == "block") {
+        console.log("Hiding sidemenu during resize...");
+        sidemenu.style.display = "none";
     }
+
+    if (visibilityMenu == "none" && sidebutton.classList.contains("change")) {
+        console.log("Removing change class from sidebutton...");
+        sidebutton.classList.toggle("change");
+    }
+    console.log("Finished closeSide function.")
 }
