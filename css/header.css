@@ -9,7 +9,7 @@ ul.horizontal {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: red;
+  background-color: #1D79F2;
   display: flex;
   justify-content: flex-end;
 }
@@ -17,7 +17,7 @@ ul.horizontal {
 li.horizontal a {
   display: none;
   font-family: sans-serif;
-  color: black;
+  color: #012840;
   text-align: center;
   padding: 24px 16px;
   text-decoration: none;
@@ -25,21 +25,21 @@ li.horizontal a {
 }
 
 li.horizontal a:hover {
-  background-color: #05C7F2;
+  background-color: #1F5AA6;
 }
 
 li.horizontal a.active {
-  background-color: red;
+  background-color: #1D79F2;
 }
 
 li.horizontal a.active:hover {
-  background-color: #05C7F2;
+  background-color: #1F5AA6;
 }
 
 li.horizontal a.sidebutton {
   display: block;
   font-family: sans-serif;
-  color: black;
+  color: #012840;
   text-align: center;
   padding: 13.5px 13.5px;
   text-decoration: none;
@@ -53,7 +53,7 @@ li.horizontal a.sidebutton:hover {
 .bar {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #012840;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -75,7 +75,7 @@ ul.vertical {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: red;
+  background-color: #1D79F2;
   display: flex;
   flex-direction: column;
 }
@@ -83,7 +83,7 @@ ul.vertical {
 li.vertical a {
   display: block;
   font-family: sans-serif;
-  color: black;
+  color: #012840;
   text-align: center;
   padding: 16px 0;
   text-decoration: none;
@@ -91,15 +91,15 @@ li.vertical a {
 }
 
 li.vertical a:hover {
-  background-color: #05C7F2;
+  background-color: #1F5AA6;
 }
 
 li.vertical a.active {
-  background-color: red;
+  background-color: #1D79F2;
 }
 
 li.vertical a.active:hover {
-  background-color: #05C7F2;
+  background-color: #1F5AA6;
 }
 
 li a:hover:not(.sidebutton) {
@@ -110,7 +110,7 @@ li a:hover:not(.sidebutton) {
 #progress {
   height: 15px;
   /*background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);*/
-  background-color: #F29199;
+  background-color: #27F2F2;
   width: 0;
 }
 
@@ -120,7 +120,7 @@ li a:hover:not(.sidebutton) {
   float: right;
   right: 0;
   top: 66px;
-  background-color: red;
+  background-color: #1D79F2;
   width: 128px;
 }
 

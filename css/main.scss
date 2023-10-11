@@ -1,11 +1,16 @@
+$bodyColor: #012340;
+$textColor: white;
+
 #main {
     width: 50%;
-    font-size: 64px;
+    font-size: 32px;
+    color: $textColor;
+    margin-left: 64px;
 }
 
 body {
     margin: 0;
-    background-color: #F2F2F2;
+    background-color: $bodyColor;
     overflow-x: hidden;
     overflow-y: scroll;
     width: 100%;
