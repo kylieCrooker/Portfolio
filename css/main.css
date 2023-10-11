@@ -8,4 +8,5 @@ body {
     background-color: whitesmoke;
     overflow-x: hidden;
     overflow-y: scroll;
+    width: 100%;
 }
