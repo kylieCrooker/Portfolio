@@ -1,0 +1,142 @@
+$lightColor1: #66D8F2;
+
+header {
+    /* Safari compat */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 62px;
+}
+
+ul.horizontal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $lightColor1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li.horizontal a {
+    display: none;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+li.horizontal a:hover {
+    background-color: #05C7F2;
+}
+
+li.horizontal a.active {
+    background-color: $lightColor1;
+}
+
+li.horizontal a.active:hover {
+    background-color: #05C7F2;
+}
+
+li.horizontal a.sidebutton {
+    display: block;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: 13.5px 13.5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+li.horizontal a.sidebutton:hover {
+    background-color: #111;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+a.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+a.change .bar2 {
+    opacity: 0;
+}
+
+a.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+ul.vertical {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $lightColor1;
+    display: flex;
+    flex-direction: column;
+}
+
+li.vertical a {
+    display: block;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: 16px 0;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+li.vertical a:hover {
+    background-color: #05C7F2;
+}
+
+li.vertical a.active {
+    background-color: $lightColor1;
+}
+
+li.vertical a.active:hover {
+    background-color: #05C7F2;
+}
+
+li a:hover:not(.sidebutton) {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+#progress {
+    height: 15px;
+    /*background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);*/
+    background-color: #F29199;
+    width: 0;
+}
+
+#sideMenu {
+    position: absolute;
+    display: none;
+    float: right;
+    right: 0;
+    top: 66px;
+    background-color: $lightColor1;
+    width: 128px;
+}
+
+@media only screen and (min-width: 768px) {
+    li.horizontal a {
+        display: block;
+    }
+
+    li.horizontal a.sidebutton {
+        display: none;
+    }
+
+    header {
+        top: 0;
+    }
+}
