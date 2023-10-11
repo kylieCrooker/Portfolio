@@ -15,7 +15,7 @@ function scrollProgress() {
     let gradient = 60 + (percent * 0.4);
     let visibility = window.getComputedStyle(sidemenu).getPropertyValue("display");
 
-    bar.style.background = "linear-gradient(90deg, rgba(0,0,0,1) " + gradient + "%, rgba(255,255,255,0) 100%)";
+    //bar.style.background = "linear-gradient(90deg, rgba(0,0,0,1) " + gradient + "%, rgba(255,255,255,0) 100%)";
     if (visibility == "none") {
         bar.style.width = percent + "%";
     } else {
