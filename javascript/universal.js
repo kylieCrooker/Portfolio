@@ -10,17 +10,19 @@ function scrollProgress() {
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     let max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let sidemenu = document.getElementById("sideMenu");
-    let percent = ((scroll / max) * 100).toFixed(0);
+    var docWidth = document.documentElement.clientWidth
+    let progressWidth = (docWidth * (scroll / max));
     let bar = document.getElementById("progress");
-    let gradient = 60 + (percent * 0.4);
+    //let gradient = 60 + (progressWidth * 0.4);
     let visibility = window.getComputedStyle(sidemenu).getPropertyValue("display");
+    let sideWidth = parseInt(window.getComputedStyle(sidemenu).getPropertyValue("width"));
+    let truncatedprogressWidth = ((docWidth - sideWidth) * (scroll / max));
 
     //bar.style.background = "linear-gradient(90deg, rgba(0,0,0,1) " + gradient + "%, rgba(255,255,255,0) 100%)";
     if (visibility == "none") {
-        bar.style.width = percent + "%";
+        bar.style.width = progressWidth + "px";
     } else {
-        let truncatedPercent = percent * 0.8;
-        bar.style.width = truncatedPercent + "%";
+        bar.style.width = truncatedprogressWidth + "px";
     }
 };
 
