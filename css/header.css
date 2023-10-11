@@ -2,7 +2,7 @@ header {
     /* Safari compat */
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 62px;
 }
 
 ul.horizontal {
@@ -132,5 +132,9 @@ li a:hover:not(.sidebutton) {
 
     li.horizontal a.sidebutton {
         display: none;
+    }
+
+    header {
+        top: 0;
     }
 }
