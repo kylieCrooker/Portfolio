@@ -6,4 +6,6 @@
 body {
     margin: 0;
     background-color: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
