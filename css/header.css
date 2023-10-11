@@ -9,7 +9,7 @@ ul.horizontal {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #66D8F2;
+  background-color: red;
   display: flex;
   justify-content: flex-end;
 }
@@ -29,7 +29,7 @@ li.horizontal a:hover {
 }
 
 li.horizontal a.active {
-  background-color: #66D8F2;
+  background-color: red;
 }
 
 li.horizontal a.active:hover {
@@ -75,7 +75,7 @@ ul.vertical {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #66D8F2;
+  background-color: red;
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +95,7 @@ li.vertical a:hover {
 }
 
 li.vertical a.active {
-  background-color: #66D8F2;
+  background-color: red;
 }
 
 li.vertical a.active:hover {
@@ -120,7 +120,7 @@ li a:hover:not(.sidebutton) {
   float: right;
   right: 0;
   top: 66px;
-  background-color: #66D8F2;
+  background-color: red;
   width: 128px;
 }
 
