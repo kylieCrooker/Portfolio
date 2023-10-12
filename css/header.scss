@@ -1,13 +1,15 @@
-$menuColorLight: #1D79F2;
-$menuColorDark: #1F5AA6;
-$HeaderText: #012840;
-$progressBarColor: #27F2F2;
+$menuColorLight: #02735E;
+$menuColorDark: #025951;
+$HeaderText: #0D0D0D;
+$progressBarColor: #0CF25D;
+
+
 
 header {
     /* Safari compat */
     position: -webkit-sticky;
     position: sticky;
-    top: 62px;
+    top: 0;
 }
 
 ul.horizontal {
@@ -53,7 +55,7 @@ li.horizontal a.sidebutton {
 }
 
 li.horizontal a.sidebutton:hover {
-    background-color: #111;
+    background-color: $menuColorDark;
 }
 
 .bar {
@@ -91,7 +93,7 @@ li.vertical a {
     font-family: sans-serif;
     color: $HeaderText;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px;
     text-decoration: none;
     transition: background-color 0.2s;
 }
