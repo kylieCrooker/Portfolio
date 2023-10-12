@@ -115,9 +115,14 @@ li a:hover:not(.sidebutton) {
     transition: transform 0.2s ease-in;
 }
 
-#progress {
-    height: 15px;
-    /*background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);*/
+.progress-container {
+    height: 8px;
+    width: 100%;
+    background-color: $menuColorDark;
+}
+
+.progress-bar {
+    height: 8px;
     background-color: $progressBarColor;
     width: 0;
 }
