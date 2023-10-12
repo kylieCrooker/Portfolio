@@ -1,29 +1,26 @@
 window.onload = function loadListeners() {
     document.body.onscroll = scrollProgress;
     document.getElementById("sidebutton").onclick = toggleSide;
-    window.onresize = closeSide;
+    window.onresize = closeSide, scrollProgress;
 }
 
 
 
 function scrollProgress() {
-    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let sidemenu = document.getElementById("sideMenu");
-    var docWidth = document.documentElement.clientWidth
-    let progressWidth = (docWidth * (scroll / max));
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = parseInt((winScroll / height) * 100);
     let bar = document.getElementById("progress");
-    //let gradient = 60 + (progressWidth * 0.4);
-    let visibility = window.getComputedStyle(sidemenu).getPropertyValue("display");
-    let sideWidth = parseInt(window.getComputedStyle(sidemenu).getPropertyValue("width"));
-    let truncatedprogressWidth = ((docWidth - sideWidth) * (scroll / max));
 
-    //bar.style.background = "linear-gradient(90deg, rgba(0,0,0,1) " + gradient + "%, rgba(255,255,255,0) 100%)";
-    if (visibility == "none") {
-        bar.style.width = progressWidth + "px";
-    } else {
-        bar.style.width = truncatedprogressWidth + "px";
+    if (isNaN(scrolled)) {
+        scrolled = 0;
     }
+
+    bar.style.width = scrolled + "%";
+
+    console.log("Winscroll = " + winScroll);
+    console.log("height = " + height);
+    console.log("scrolled = " + scrolled);
 };
 
 function toggleSide() {
@@ -41,7 +38,6 @@ function toggleSide() {
         console.log("Hiding sidemenu...")
         sidemenu.style.display = "none";
     }
-    scrollProgress();
 
     sidebutton.classList.toggle("change");
 }
@@ -54,13 +50,6 @@ function closeSide() {
     console.log("Running closeSide function...");
 
     if (visibilityButton == "none" && visibilityMenu == "block") {
-        console.log("Hiding sidemenu during resize...");
-        sidemenu.style.display = "none";
+        toggleSide();
     }
-
-    if (visibilityMenu == "none" && sidebutton.classList.contains("change")) {
-        console.log("Removing change class from sidebutton...");
-        sidebutton.classList.toggle("change");
-    }
-    console.log("Finished closeSide function.")
 }
