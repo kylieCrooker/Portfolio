@@ -1,11 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+
 $bodyColor: #034159;
 $textColor: white;
 
 #main {
-    width: 50%;
-    font-size: 16px;
+    margin: 0 20%;
+}
+
+#main p {
+    font-size: max(1.2vw, 16px);
     color: $textColor;
-    margin-left: 64px;
+    font-family: 'Mate', serif;
+}
+
+#main h2 {
+    font-size: max(1.5vw, 24px);
+    color: $textColor;
+    font-family: 'Mate', serif;
+}
+
+.content-box {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 0;
+}
+
+.content-box img {
+    width: 50%;
+    height: auto;
+    align-self: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.content-box .text-box {
+    width: 100%;
+    height: auto;
 }
 
 body {
@@ -14,4 +46,21 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     width: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
+    .content-box {
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .content-box img {
+        width: 50%;
+        height: auto;
+    }
+
+    .content-box .text-box {
+        width: 50%;
+        height: auto;
+    }
 }
