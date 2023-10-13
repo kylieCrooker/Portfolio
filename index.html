@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="javascript/universal.js"></script>
     <script src="https://kit.fontawesome.com/0b123f4857.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -17,21 +18,20 @@
 
     <header>
         <div id="header">
+            <!--Dear programmer: When I wrote this code only god and I knew how it worked. Now only god knows it.-->
+            <h1 class="miniLogo">&lt;KC&gt;</h1>
+            <h1 class="logo">&lt;Kylie Crooker&gt;</h1>
             <ul class="horizontal">
-                <li class="header">
-                    <h1>&lt;Kylie Crooker&gt;</h1>
-                </li>
                 <li class="horizontal"><a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank"
                         title="My linkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li class="horizontal"><a href="https://codepen.io/Kylie-Crooker" target="_blank" title="My Codepen"><i
                             class="fa-brands fa-codepen"></i></a></li>
                 <li class="horizontal"><a href="https://github.com/kylieCrooker" target="_blank" title="My Github"><i
                             class="fa-brands fa-github"></i></a></li>
-                <li class="horizontal"><a href="about.html">Contact Me</a></li>
-                <li class="horizontal"><a href="about.html">Work</a></li>
-                <li class="horizontal"><a href="">Experience</a></li>
-                <li class="horizontal"><a href="">About Me</a></li>
-                <li class="horizontal"><a class="active" href="">Home</a></li>
+                <li class="horizontal"><a href="contact.html">Contact</a></li>
+                <li class="horizontal"><a href="examples.html">Portfolio</a></li>
+                <li class="horizontal"><a href="about.html">About</a></li>
+                <li class="horizontal"><a class="active" href="index.html">Home</a></li>
                 <li class="horizontal">
                     <a id="sidebutton" class="active sidebutton" href="javascript:void(0);">
                         <div class="bar bar1"></div>
@@ -44,39 +44,34 @@
                 <div id="progress" class="progress-bar"></div>
             </div>
             <div class="sideMenu" id="sideMenu">
-                <a class="active" href="">Home</a>
-                <a href="">About Me</a>
-                <a href="">Experience</a>
-                <a href="">Work</a>
-                <a href="">Contact Us</a>
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="examples.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
                 <div class="social-links-vertical">
-                    <a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank" title="My LinkedIn"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://codepen.io/Kylie-Crooker" target="_blank" title="My Codepen"><i
-                            class="fa-brands fa-codepen"></i></a>
-                    <a href="https://github.com/kylieCrooker" target="_blank" title="My Github"><i
-                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank" title="My LinkedIn"
+                        onclick="toggleSide()"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://codepen.io/Kylie-Crooker" target="_blank" title="My Codepen"
+                        onclick="toggleSide()"><i class="fa-brands fa-codepen"></i></a>
+                    <a href="https://github.com/kylieCrooker" target="_blank" title="My Github"
+                        onclick="toggleSide()"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
     </header>
     <div id="main">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod et impedit alias facere corporis, adipisci
-            ipsam
-            cumque aliquid dicta perspiciatis laudantium consequatur aspernatur molestias provident nisi, suscipit ipsa
-            molestiae quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, enim harum non rerum facere
-            qui
-            totam autem dolores nemo, aut ipsum. Beatae quisquam suscipit laborum fugiat ipsam culpa, rerum autem! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel vero animi quae magni illo et eius corporis
-            dolores consequuntur voluptates provident, aut aspernatur in fugiat? Molestias doloremque veritatis
-            distinctio?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium repellendus provident dolorum! Eos ab
-            ipsum
-            voluptatum illo! Eaque ratione quaerat incidunt ipsum tenetur consequatur. Provident amet quos nihil
-            laudantium
-            vel?</p>
+        <div class="content-box">
+            <div class="text-box">
+                <h2>"I am a Junior web developer, Aspiring IT technician, and tech hobbyist, looking to find my place in
+                    the industry. The main function of this site is to serve as a location for my Portfolio, but it also
+                    has the additional function of being another item to add to my Portfolio, as it was coded entirely
+                    from scratch, and hosted on a custom domain."</h2>
+            </div>
+            <img src="images/Kylie_cropped.JPG">
+        </div>
     </div>
     <footer>
+        <p>©2023 Kylie Crooker. All rights reserved</p>
     </footer>
 </body>
 
