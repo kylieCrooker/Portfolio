@@ -2,16 +2,28 @@ header {
   /* Safari compat */
   position: sticky;
   top: 0;
+  font-size: 24px;
+  background-color: #02735E;
 }
 
-ul.horizontal {
+ul h1 {
+  margin: 0;
+  padding-left: 1em;
+  vertical-align: middle;
+  position: absolute;
+  top: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  transition: font-size 0.1s;
+  color: #0CF25D;
+}
+
+header ul.horizontal {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #02735E;
-  display: flex;
-  justify-content: flex-end;
 }
 
 li.horizontal a {
@@ -22,18 +34,13 @@ li.horizontal a {
   padding: 24px 16px;
   text-decoration: none;
   transition: background-color 0.2s;
+  float: right;
 }
 
 li.horizontal a:hover {
   background-color: #025951;
-}
-
-li.horizontal a.active {
-  background-color: #02735E;
-}
-
-li.horizontal a.active:hover {
-  background-color: #025951;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
 }
 
 li.horizontal a.sidebutton {
@@ -90,23 +97,6 @@ li.vertical a {
   transition: background-color 0.2s;
 }
 
-li.vertical a:hover {
-  background-color: #025951;
-}
-
-li.vertical a.active {
-  background-color: #02735E;
-}
-
-li.vertical a.active:hover {
-  background-color: #025951;
-}
-
-li a:hover:not(.sidebutton) {
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in;
-}
-
 .progress-container {
   height: 8px;
   width: 100%;
@@ -120,23 +110,58 @@ li a:hover:not(.sidebutton) {
 }
 
 #sideMenu {
-  position: absolute;
   display: none;
-  float: right;
-  right: 0;
-  top: 66px;
   background-color: #02735E;
-  width: 128px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
+.social-links-vertical {
+  margin: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.sideMenu a {
+  transition: background-color 0.2s;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #0D0D0D;
+  padding: 8px;
+}
+
+.sideMenu a:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
+  background-color: #025951;
+}
+
+.social-links-vertical a {
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.social-links-vertical i {
+  padding: 8px;
+}
+
+@media only screen and (min-width: 321px) {
+  ul h1 {
+    top: 16px;
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1113px) {
   li.horizontal a {
     display: block;
   }
   li.horizontal a.sidebutton {
     display: none;
   }
-  header {
-    top: 0;
+  ul h1 {
+    top: 14px;
+    font-size: 48px;
   }
 }/*# sourceMappingURL=header.css.map */
