@@ -7,12 +7,24 @@
   font-size: max(1.2vw, 16px);
   color: white;
   font-family: "Mate", serif;
+  text-shadow: 0.2vw 0.2vw black;
+  text-shadow: 0.15rem 0.15rem 0.2rem black;
 }
 
 #main h2 {
   font-size: max(1.5vw, 24px);
   color: white;
   font-family: "Mate", serif;
+  text-shadow: 0.15rem 0.15rem 0.2rem black;
+}
+
+.name {
+  color: #038C3E;
+  transition: color 0.2s ease-in;
+}
+
+.name:hover {
+  color: #0CF25D;
 }
 
 .content-box {
