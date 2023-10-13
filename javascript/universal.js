@@ -33,7 +33,7 @@ function toggleSide() {
 
     if (visibility == "none") {
         console.log("Showing sidemenu");
-        sidemenu.style.display = "block";
+        sidemenu.style.display = "flex";
     } else {
         console.log("Hiding sidemenu...")
         sidemenu.style.display = "none";
