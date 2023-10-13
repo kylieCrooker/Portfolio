@@ -15,12 +15,7 @@ function scrollProgress() {
     if (isNaN(scrolled)) {
         scrolled = 0;
     }
-
     bar.style.width = scrolled + "%";
-
-    console.log("Winscroll = " + winScroll);
-    console.log("height = " + height);
-    console.log("scrolled = " + scrolled);
 };
 
 function toggleSide() {
