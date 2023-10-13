@@ -13,18 +13,27 @@ header {
     top: 0;
     font-size: 24px;
     background-color: $menuColorLight;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 10px 1px black;
 }
 
-ul h1 {
+.logo {
+    display: none;
+}
+
+.miniLogo {
+    display: block;
+}
+
+#header h1 {
     margin: 0;
-    padding-left: 1em;
     vertical-align: middle;
     position: absolute;
-    top: 16px;
+    top: 14px;
+    left: 16px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 28px;
-    transition: font-size 0.1s;
     color: $logoText;
+    font-size: max(2em, 2vw);
 }
 
 header ul.horizontal {
@@ -37,12 +46,13 @@ header ul.horizontal {
 
 li.horizontal a {
     display: none;
-    font-family: sans-serif;
     color: $HeaderText;
     text-align: center;
+    font-size: max(1.5vw, 1em);
     padding: 24px 16px;
     text-decoration: none;
     transition: background-color 0.2s;
+    font-weight: bold;
     float: right;
 }
 
@@ -57,7 +67,7 @@ li.horizontal a.sidebutton {
     font-family: sans-serif;
     color: $HeaderText;
     text-align: center;
-    padding: 13.5px 13.5px;
+    padding: 16px 16px;
     text-decoration: none;
     transition: background-color 0.2s;
 }
@@ -86,26 +96,6 @@ a.change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-ul.vertical {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $menuColorLight;
-    display: flex;
-    flex-direction: column;
-}
-
-li.vertical a {
-    display: block;
-    font-family: sans-serif;
-    color: $HeaderText;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
 .progress-container {
     height: 8px;
     width: 100%;
@@ -130,15 +120,21 @@ li.vertical a {
     margin: 8px;
     display: flex;
     gap: 8px;
+    justify-content: center;
+    width: 100%;
 }
 
 .sideMenu a {
     transition: background-color 0.2s;
-    width: 100%;
-    text-align: center;
     text-decoration: none;
-    color: $HeaderText;
     padding: 8px;
+    color: $HeaderText;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sideMenu a:not(.social-links-vertical a) {
+    width: 100%;
 }
 
 .sideMenu a:hover {
@@ -156,24 +152,24 @@ li.vertical a {
     padding: 8px;
 }
 
-@media only screen and (min-width: 321px) {
-    ul h1 {
-        top: 16px;
-        font-size: 32px;
+@media only screen and (min-width: 321px) {}
+
+@media only screen and (min-width: 500px) {
+    .miniLogo {
+        display: none;
+    }
+
+    .logo {
+        display: block;
     }
 }
 
-@media only screen and (min-width: 1113px) {
+@media only screen and (min-width: 1300px) {
     li.horizontal a {
         display: block;
     }
 
     li.horizontal a.sidebutton {
         display: none;
-    }
-
-    ul h1 {
-        top: 14px;
-        font-size: 48px;
     }
 }
