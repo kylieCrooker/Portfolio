@@ -15,12 +15,10 @@
 </head>
 
 <body>
-
-    <header>
-        <!--#include virtual="header.html"-->
-        <div id="main">
-        </div>
-        <!--#include virtual="footer.html"-->
+    <!--#include virtual="header.html"-->
+    <div id="main">
+    </div>
+    <!--#include virtual="footer.html"-->
 </body>
 
 </html>
