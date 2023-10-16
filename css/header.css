@@ -69,7 +69,7 @@ li.horizontal a.sidebutton:hover {
   color: #0CF25D;
 }
 
-.social-links-horizontal {
+li.social-links-horizontal a {
   padding: 24px 15.5px;
 }
 
