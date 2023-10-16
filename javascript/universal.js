@@ -44,6 +44,9 @@ function closeSide() {
     let visibilityButton = window.getComputedStyle(sidebutton).getPropertyValue("display");
     console.log("Running closeSide function...");
 
+    console.log(sidemenu);
+    console.log(sidebutton);
+
     if (visibilityButton == "none" && visibilityMenu == "flex") {
         toggleSide();
     }
