@@ -38,6 +38,7 @@ function toggleSide() {
 }
 
 function closeSide() {
+    let toggle = toggleSide();
     let sidemenu = document.getElementById("sideMenu");
     let sidebutton = document.getElementById("sidebutton");
     let visibilityMenu = window.getComputedStyle(sidemenu).getPropertyValue("display");
@@ -49,6 +50,6 @@ function closeSide() {
 
     if (visibilityButton == "none" && visibilityMenu == "flex") {
         console.log("test");
-        toggleSide;
+        toggle;
     }
 }
