@@ -117,8 +117,9 @@ a.change .bar3 {
 }
 
 .social-links-vertical {
+    margin: 8px;
     display: flex;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
     width: 100%;
 }
