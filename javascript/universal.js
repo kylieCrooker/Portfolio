@@ -48,6 +48,6 @@ function closeSide() {
     console.log(sidebutton);
 
     if (visibilityButton == "none" && visibilityMenu == "flex") {
-        toggleSide();
+        toggleSide;
     }
 }
