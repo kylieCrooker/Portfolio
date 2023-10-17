@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/0b123f4857.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <!--Universal head elements end-->
-    <title>Kylie Crooker - Projects</title>
+    <title>Kylie Crooker - About</title>
 </head>
 
 <body>
@@ -19,7 +19,9 @@
     <div id="main">
         <div id="about-me">
             <h2>About me</h2>
-            <p>I am a Web development and GIS trainee at Hopeworks, I have excelled in my education within the program
+            <p>I am a Web development and GIS trainee at <a href="https://hopeworks.org/" title="Hopeworks Site"
+                    target="_blank" class="link">Hopeworks</a>, I have excelled in my education within the
+                program
                 by channeling my existing knowledge of web development, and my ecstatic passion for tech as a whole. I
                 believe that doing what you love in service of the world you want to create is the most important thing
                 a person can do with their lives.</p>
@@ -38,7 +40,18 @@
                 coding in my spare time for personal projects. Outside of tech, I enjoy tabletop gaming, hiking, and
                 hanging out with my supportive girlfriend and our two cats.</p>
         </div>
-        <p></p>
+        <h3 style="text-align: center;">Professional Links and Resume Download</h3>
+        <div class="spotlight-links">
+            <a href="Kylie Crooker October 2023 Resume.pdf" target="_blank" title="My Resume" class="link"
+                download="Kylie Crooker October 2023 Resume"><i class="fa-regular fa-file-lines"></i></a>
+            <a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank" title="My LinkedIn" class="link"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://codepen.io/Kylie-Crooker" target="_blank" title="My Codepen" class="link"><i
+                    class="fa-brands fa-codepen"></i></a>
+            <a href="https://github.com/kylieCrooker" target="_blank" title="My Github" class="link"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+        <hr>
     </div>
     <!--#include virtual="footer.html"-->
 </body>

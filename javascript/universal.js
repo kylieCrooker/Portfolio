@@ -52,3 +52,11 @@ function closeSide() {
         let toggle = toggleSide();
     }
 }
+
+function galleryFocus(imgs) {
+    let expandImg = document.getElementById("zoom-gallery");
+    let imgText = document.getElementById("text-gallery");
+
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+}

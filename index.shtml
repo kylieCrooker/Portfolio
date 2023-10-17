@@ -19,7 +19,9 @@
     <div id="main">
         <div class="content-box">
             <div class="text-box">
-                <h2>Hey there! I'm <span class="name" title="She/Her, They/Them">Kylie Crooker</span>, a Junior web
+                <h2>Hey there! I'm <a href="https://en.pronouns.page/@kyliecrooker#she/her" class="link" target="_blank"
+                        title="Pronouns page">Kylie Crooker</a>, a
+                    Junior web
                     developer, Aspiring IT
                     technician, and tech hobbyist, looking to find my place in the industry.</h2>
                 <p>My current skillset includes a solid foundation in HTML, CSS, and Javascript. I also know my way
