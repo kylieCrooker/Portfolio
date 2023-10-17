@@ -260,7 +260,7 @@
             </form>
         </div>
         <hr style="margin-bottom: 30px;">
-        <div class="spotlight-links">
+        <div class="spotlight-links" style="margin-bottom: 40px;">
             <a href="Kylie Crooker October 2023 Resume.pdf" target="_blank" title="My Resume" class="link"
                 download="Kylie Crooker October 2023 Resume"><i class="fa-regular fa-file-lines"></i></a>
             <a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank" title="My LinkedIn" class="link"><i

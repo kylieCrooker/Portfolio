@@ -315,7 +315,7 @@
                 off of a particular base image that I just found particularly funny.</p>
             <hr>
         </div>
-        <div class="spotlight" style="margin-bottom: 40px;">
+        <div class="spotlight">
             <h2>This Portfolio!</h2>
             <iframe height="800" style="width: 100%;" scrolling="yes" title="Kylie's mod spotlight - Wordpress site"
                 src="https://kylie.crookers.com/" frameborder="no" loading="lazy" allowtransparency="true"
@@ -335,7 +335,7 @@
                     title="My portfolio, dunno how else you would find this site without this link, its nearly impossible"
                     class="link"><i class="fa-solid fa-globe"></i></a>
             </div>
-            <hr>
+            <hr style="margin-bottom: 40px;">
         </div>
         <!--#include virtual="footer.html"-->
 </body>
