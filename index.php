@@ -35,7 +35,7 @@
             <img src="images/Kylie_cropped.JPG">
         </div>
     </div>
-    <!--#include virtual="footer.html"-->
+    <?php include("footer.html");?>
 </body>
 
 </html>
