@@ -2,15 +2,7 @@
 <html>
 
 <head>
-    <!--Universal head elements start-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="javascript/universal.js"></script>
-    <script src="https://kit.fontawesome.com/0b123f4857.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <!--Universal head elements end-->
+    <?php include("universalHeadElements.html") ?>
     <title>Kylie Crooker - Projects</title>
 </head>
 
