@@ -21,13 +21,12 @@ header {
     max-width: 1440px;
     margin: auto;
     display: flex;
-    padding: 0;
+    padding: 1em;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    padding: 8px;
     min-width: 5vw;
     flex-shrink: 1;
 }
@@ -44,8 +43,16 @@ header {
     width: 0;
 }
 
-header nav {
-    padding: 8px;
+header nav a {
+    font-size: 32px;
+    color: $HeaderText;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: $logoText;
+    background-color: $menuColorDark;
 }
 
 @media only screen and (min-width: 321px) {}
