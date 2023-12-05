@@ -126,6 +126,7 @@ hr {
   height: 50px;
   box-shadow: 1px 1px 8px 0 black;
   opacity: 75%;
+  z-index: -1;
   transition: 0.2s;
 }
 
@@ -148,6 +149,7 @@ p.text-gallery {
   margin-top: 8px;
   font-size: 0.8em !important;
   opacity: 80%;
+  z-index: -1;
 }
 
 .contact-form {
