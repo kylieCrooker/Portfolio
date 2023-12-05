@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("header.html");?>
+    <?php include("header.html"); ?>
     <div id="main">
         <div class="contact-links">
             <h2>Contact Me</h2>
@@ -41,7 +41,7 @@
         </div>
         <div style="width: 100%; height: 50px;"></div>
     </div>
-    <?php include("footer.html");?>
+    <?php include("footer.html"); ?>
 </body>
 
 </html>

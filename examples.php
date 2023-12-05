@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("header.html");?>
+    <?php include("header.html"); ?>
     <div id="main">
         <div class="spotlight">
             <h2>Necronomi.com</h2>
@@ -108,7 +108,7 @@
         </div>
     </div>
     <div style="width: 100%; height: 50px;"></div>
-    <?php include("footer.html");?>
+    <?php include("footer.html"); ?>
 </body>
 
 </html>

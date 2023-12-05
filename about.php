@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("header.html");?>
+    <?php include("header.html"); ?>
     <div id="main">
         <div id="about-me">
             <h2>About me</h2>
@@ -46,7 +46,7 @@
         <hr style="margin-bottom: 40px;">
         <div style="width: 100%; height: 50px;"></div>
     </div>
-    <?php include("footer.html");?>
+    <?php include("footer.html"); ?>
 </body>
 
 </html>

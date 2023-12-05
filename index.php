@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("header.html");?>
+    <?php include("header.html"); ?>
     <div id="main">
         <div class="content-box">
             <div class="text-box">
@@ -27,7 +27,7 @@
             <img src="images/Kylie_cropped.JPG">
         </div>
     </div>
-    <?php include("footer.html");?>
+    <?php include("footer.html"); ?>
 </body>
 
 </html>
