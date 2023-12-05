@@ -16,7 +16,7 @@
             <a href="tel:1-856-870-0296" title="(856)-870-0296" class="link" target="_blank">(856)-870-0296</a>
         </div>
         <div class="contact-form">
-            <form>
+            <form action="email.php" method="post">
                 <label for="fname">Your Name</label>
                 <input id="fname" placeholder="Your name...">
                 <label for="email">Email Address</label>
