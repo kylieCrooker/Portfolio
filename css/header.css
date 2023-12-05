@@ -14,13 +14,12 @@ header {
   max-width: 1440px;
   margin: auto;
   display: flex;
-  padding: 0;
+  padding: 1em;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  padding: 8px;
   min-width: 5vw;
   flex-shrink: 1;
 }
