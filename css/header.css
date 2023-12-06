@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-  min-width: 5vw;
+  min-width: 100px;
   flex-shrink: 1;
 }
 
@@ -36,12 +36,19 @@ header {
   width: 0;
 }
 
+.navflex {
+  display: flex;
+  gap: 10px;
+}
+
 header nav a {
   transition: 0.2s ease-in;
   font-size: 32px;
   color: #0D0D0D;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.25em 0.5em;
+  border-radius: 15px;
 }
 
 header nav a:hover {
@@ -49,19 +56,24 @@ header nav a:hover {
   background-color: #025951;
 }
 
-@media only screen and (min-width: 500px) {
-  .miniLogo {
-    display: none;
-  }
-  .logo {
+/* Responsive design rules start */
+.desktop-block {
+  display: none;
+}
+
+.desktop-flex {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .desktop-block {
     display: block;
+  }
+  .desktop-flex {
+    display: flex;
+  }
+  .mobile {
+    display: none;
   }
 }
-@media only screen and (min-width: 1300px) {
-  li.horizontal a {
-    display: block;
-  }
-  li.horizontal a.sidebutton {
-    display: none;
-  }
-}/*# sourceMappingURL=header.css.map */
+/* Responsive design rules end *//*# sourceMappingURL=header.css.map */
