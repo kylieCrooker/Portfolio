@@ -9,7 +9,7 @@
 <body>
     <?php include("header.html"); ?>
     <div id="main">
-        <div id="about-me">
+        <div class="content-box-about">
             <h2>About me</h2>
             <p>I am a Web development and GIS trainee at <a href="https://hopeworks.org/" title="Hopeworks Site"
                     target="_blank" class="link">Hopeworks</a>, I have excelled in my education within the

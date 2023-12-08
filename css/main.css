@@ -46,7 +46,7 @@ label {
   color: #0CF25D;
 }
 
-.content-box {
+.content-box-home {
   margin: auto;
   max-width: 1440px;
   padding: 0 1em;
@@ -59,7 +59,7 @@ label {
   flex-wrap: wrap;
 }
 
-.content-box img {
+.content-box-home img {
   width: 400px;
   max-width: 80%;
   height: auto;
@@ -68,7 +68,7 @@ label {
   box-shadow: 0 0 10px 1px black;
 }
 
-.content-box .text-box {
+.content-box-home .text-box {
   max-width: 40em;
   height: auto;
 }
@@ -118,6 +118,12 @@ hr {
 
 .gallery {
   margin-top: 20px;
+.content-box-about {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 1em;
+  height: 100%;
+  gap: 16px;
   display: flex;
   justify-content: center;
   gap: 20px;

@@ -9,7 +9,7 @@
 <body>
     <?php include("header.html"); ?>
     <div id="main">
-        <div class="content-box">
+        <div class="content-box-home">
             <div class="text-box">
                 <h2>Hey there! I'm <a href="https://en.pronouns.page/@kyliecrooker#she/her" class="link" target="_blank"
                         title="Pronouns page">Kylie Crooker</a>, a
