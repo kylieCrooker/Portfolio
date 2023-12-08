@@ -1,0 +1,28 @@
+.example {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example hr {
+    width: 80%;
+}
+
+.example p {
+    margin: 8px;
+}
+
+.example-links {
+    font-size: 48px;
+}
+
+.example-links .link:hover {
+    transform: scale(1.5);
+}
+
+@media only screen and (min-width: 1200px) {
+    .example {
+        width: 600px;
+    }
+}
