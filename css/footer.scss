@@ -17,10 +17,28 @@ $logoText: #0CF25D;
     max-width: 1440px;
     margin: auto;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
 #footerBox p {
     margin: 0;
+}
+
+#footer nav a {
+    transition: 0.2s ease-in;
+    font-size: 32px;
+    color: $HeaderText;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    border-radius: 15px;
+    margin: 0;
+}
+
+#footer nav a:hover {
+    color: $logoText;
+    background-color: $menuColorDark;
 }
 
 @media only screen and (min-width: 1200px) {
