@@ -11,7 +11,7 @@ $nameTextHover: #0CF25D;
     display: flex;
 }
 
-#main p {
+p {
     font-size: 20px;
     color: $textColor;
     font-family: 'Mate', serif;
@@ -28,14 +28,21 @@ label {
     margin-bottom: 0.5em;
 }
 
-#main h2 {
+h1 {
+    font-size: 48px;
+    color: $textColor;
+    font-family: 'Mate', serif;
+    text-shadow: 0.15rem 0.15rem 0.2rem black;
+}
+
+h2 {
     font-size: 28px;
     color: $textColor;
     font-family: 'Mate', serif;
     text-shadow: 0.15rem 0.15rem 0.2rem black;
 }
 
-#main h3 {
+h3 {
     font-size: max(1.2vw, 18px);
     color: $textColor;
     font-family: 'Mate', serif;
@@ -105,16 +112,24 @@ label {
     flex-wrap: wrap;
 }
 
+.content-box-error {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 1em;
+    height: 100%;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 body {
     margin: 0;
     background-color: $bodyColor;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
-}
-
-#about-me {
-    max-width: 100%;
 }
 
 .contact-form {
@@ -153,6 +168,15 @@ body {
 
 .contact-links a {
     font-size: max(1.3vw, 18px) !important;
+}
+
+.spotlight-links {
+    display: flex;
+    gap: 20px;
+}
+
+.spotlight-links .link {
+    font-size: 48px;
 }
 
 @media only screen and (min-width: 1200px) {}
