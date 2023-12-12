@@ -7,18 +7,19 @@
 </head>
 
 <body>
+    <!--Universal header element included using serverside PHP, so make sure any changes to the header are carried over across all pages, without having to manually copy them.-->
     <?php include("header.html"); ?>
+
+    <!--Main div contains all content outside of the header and the footer, and also provides spacing between the aforementioned elements and the contained content using margins.-->
     <div id="main">
         <div class="content-box-about">
             <h2>About me</h2>
-            <p>I am a Web development and GIS trainee at <a href="https://hopeworks.org/" title="Hopeworks Site"
+            <p>I am a web design and development intern at <a href="https://hopeworks.org/" title="Hopeworks Site"
                     target="_blank" class="link">Hopeworks</a>, I have excelled in my education within the
-                program
-                by channeling my existing knowledge of web development, and my ecstatic passion for tech as a whole.
-                I
-                believe that doing what you love in service of the world you want to create is the most important
-                thing
-                a person can do with their lives.</p>
+                program by channeling my existing knowledge of web development, and my ecstatic passion for tech as a
+                whole. I believe that doing what you love in service of the world you want to create is the most
+                important thing a person can do with their lives.
+            </p>
             <p>I have put in a great deal of effort within the training program, and this has shown in the fact that
                 I
                 have completed the majority of the modules within under a month, all while maintaining my excellent
