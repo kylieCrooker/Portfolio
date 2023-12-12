@@ -1,3 +1,4 @@
+/*Overall footer styling start*/
 #footer {
   border-top: solid 4px #025951;
   bottom: 0;
@@ -7,6 +8,8 @@
   box-shadow: 0 0 10px 1px black;
 }
 
+/*Overall footer styling end*/
+/*Footer content box styling start*/
 #footerBox {
   max-width: 1440px;
   margin: auto;
@@ -17,10 +20,18 @@
   gap: 8px;
 }
 
+/*Footer content box styling end*/
+/*Footer copyright notice styling start*/
 #footerBox p {
   margin: 0;
+  font-family: inherit;
+  color: #0D0D0D;
+  text-shadow: none;
+  font-weight: bold;
 }
 
+/*Footer copyright notice styling end*/
+/*Footer social media links styling start*/
 #footer nav a {
   transition: 0.2s ease-in;
   font-size: 24px;
@@ -39,8 +50,12 @@
 #footer nav a:hover {
   color: #0CF25D;
   background-color: #025951;
+  transform: scale(1.2);
 }
 
+/*Footer social media links styling end*/
+/*Responsive design breakpoints*/
+/*Desktop only styling*/
 @media only screen and (min-width: 1200px) {
   #footer {
     position: fixed;

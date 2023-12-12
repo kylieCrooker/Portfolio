@@ -69,15 +69,11 @@ header nav a:hover {
   .desktop-block {
     display: block;
   }
-
   .desktop-flex {
     display: flex;
   }
-
   .mobile {
     display: none;
   }
 }
-
-/* Responsive design rules end */
-/*# sourceMappingURL=header.css.map */
+/* Responsive design rules end *//*# sourceMappingURL=header.css.map */
