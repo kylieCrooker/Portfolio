@@ -41,6 +41,7 @@
         </div>
         <div style="width: 100%; height: 50px;"></div>
     </div>
+    <div class="footer-spacer"></div>
     <?php include("footer.html"); ?>
 </body>
 

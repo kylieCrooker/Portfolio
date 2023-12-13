@@ -27,6 +27,7 @@
             <img src="images/Kylie_cropped.JPG">
         </div>
     </div>
+    <div class="footer-spacer"></div>
     <?php include("footer.html"); ?>
 </body>
 

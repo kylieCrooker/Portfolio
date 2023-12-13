@@ -50,6 +50,7 @@
             </div>
         </div>
     </div>
+    <div class="footer-spacer"></div>
     <?php include("footer.html"); ?>
 </body>
 
