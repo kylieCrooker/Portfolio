@@ -41,7 +41,8 @@ header {
   gap: 10px;
 }
 
-header nav a {
+nav a {
+  display: block;
   transition: 0.2s ease-in;
   font-size: 32px;
   color: #0D0D0D;
@@ -51,9 +52,10 @@ header nav a {
   border-radius: 15px;
 }
 
-header nav a:hover {
+nav a:hover {
   color: #0CF25D;
   background-color: #025951;
+  transform: scale(1.1);
 }
 
 /* Responsive design rules start */
