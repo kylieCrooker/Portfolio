@@ -1,16 +1,15 @@
+$nameTextDefault: #038C3E;
+
 .example {
-    width: 80%;
+    width: 600px;
     display: flex;
     flex-direction: column;
+    gap: 4px;
     align-items: center;
 }
 
-.example hr {
-    width: 80%;
-}
-
 .example p {
-    margin: 8px;
+    padding: 8px;
 }
 
 .example-links {
@@ -19,6 +18,18 @@
 
 .example-links .link:hover {
     transform: scale(1.5);
+}
+
+.border-div {
+    border-style: groove;
+    height: 400px;
+    width: 100%;
+    border-color: $nameTextDefault ;
+}
+
+.example-text {
+    height: 310px;
+    overflow: scroll;
 }
 
 @media only screen and (min-width: 1200px) {
