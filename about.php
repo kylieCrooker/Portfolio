@@ -38,6 +38,7 @@
                 coding in my spare time for personal projects. Outside of tech, I enjoy tabletop gaming, hiking, and
                 hanging out with my supportive girlfriend and our two cats.</p>
             <h3 style="text-align: center;">Professional Links and Resume Download</h3>
+            <hr>
             <div class="spotlight-links">
                 <a href="Kylie Crooker October 2023 Resume.pdf" target="_blank" title="My Resume" class="link"
                     download="Kylie Crooker October 2023 Resume"><i class="fa-regular fa-file-lines"></i></a>
@@ -48,6 +49,7 @@
                 <a href="https://github.com/kylieCrooker" target="_blank" title="My Github" class="link"><i
                         class="fa-brands fa-github"></i></a>
             </div>
+            <hr>
         </div>
     </div>
     <div class="footer-spacer"></div>
