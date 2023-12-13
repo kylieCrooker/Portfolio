@@ -1,6 +1,6 @@
 window.onload = function loadListeners() {
     document.body.onscroll = scrollProgress;
-    window.onresize = closeSide, scrollProgress;
+    window.onresize = scrollProgress;
 }
 
 
