@@ -6,9 +6,14 @@ $nameTextDefault: #038C3E;
 $nameTextHover: #0CF25D;
 
 #main {
-    min-height: 80vh;
+    min-height: 60vh;
     margin: 30px 0;
     display: flex;
+}
+
+hr {
+    width: 80%;
+    margin: 4px;
 }
 
 p {
@@ -43,7 +48,7 @@ h2 {
 }
 
 h3 {
-    font-size: max(1.2vw, 18px);
+    font-size: 24px;
     color: $textColor;
     font-family: 'Mate', serif;
     text-shadow: 0.15rem 0.15rem 0.2rem black;
@@ -91,12 +96,16 @@ h3 {
     max-width: 1440px;
     padding: 0 1em;
     height: 100%;
-    gap: 16px;
+    gap: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.content-box-about p {
+    margin: 8px 0 !important;
 }
 
 .content-box-examples {
@@ -124,6 +133,19 @@ h3 {
     flex-wrap: wrap;
 }
 
+.content-box-contact {
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 1em;
+    height: 100%;
+    gap: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 body {
     margin: 0;
     background-color: $bodyColor;
@@ -134,7 +156,7 @@ body {
 
 .contact-form {
     margin: auto;
-    width: 50%;
+    width: 50vw;
 }
 
 .contact-form input {
@@ -159,7 +181,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 40px;
 }
 
 .contact-links h2 {
@@ -167,7 +188,7 @@ body {
 }
 
 .contact-links a {
-    font-size: max(1.3vw, 18px) !important;
+    font-size: 24px !important;
 }
 
 .spotlight-links {
