@@ -8,7 +8,6 @@ $logoText: #0CF25D;
 
 #footer {
     border-top: solid 4px $menuColorDark;
-    bottom: 0;
     width: 100%;
     background-color: $menuColorLight;
     font-family: 'Courier New', Courier, monospace;
@@ -70,10 +69,21 @@ $logoText: #0CF25D;
 
 
 /*Responsive design breakpoints*/
+
+.footer-spacer {
+    display: none;
+    height: 80px;
+    width: 100%;
+}
+
 /*Desktop only styling*/
 @media only screen and (min-width: 1200px) {
     #footer {
         position: fixed;
         bottom: 0;
+    }
+
+    .footer-spacer {
+        display: block;
     }
 }
