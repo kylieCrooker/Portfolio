@@ -31,8 +31,8 @@
                 <?php if (isset($_GET["mailsend"])) { ?>
                 <p class="notification success">Email sent!
                     <?php } ?>
-                    <?php if (isset($_GET["failsend=nameEmpty"])) { ?>
-                <p class="notification">Success
+                    <?php if (isset($_GET["failsend"])) { ?>
+                <p class="notification error">Email could not be sent! Please check your inputs
                 <p>
                     <?php } ?>
 

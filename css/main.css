@@ -229,11 +229,11 @@ body {
 }
 
 .success {
-  color: #0CF25D;
+  color: #0CF25D !important;
 }
 
 .error {
-  color: #f20c0c;
+  color: #f20c0c !important;
 }
 
 .contact-column {

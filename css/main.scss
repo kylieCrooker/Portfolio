@@ -239,11 +239,11 @@ body {
 }
 
 .success {
-    color: $nameTextHover;
+    color: $nameTextHover !important;
 }
 
 .error {
-    color: #f20c0c;
+    color: #f20c0c !important;
 }
 
 .contact-column {
