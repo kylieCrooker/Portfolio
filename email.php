@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         exit;
     }
 
-    $mailTo = "kyliecrooker@kylie.crookers.com";
+    $mailTo = "kyliecrookers@kylie.crookers.com";
     $headers = "From: " . $mailFrom;
     $txt = "You have received an e-mail from " . $name . ".\n\n" . $message;
 
