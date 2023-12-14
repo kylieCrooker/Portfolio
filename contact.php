@@ -11,20 +11,31 @@
     <div id="main">
         <div class="content-box-contact">
             <div class="contact-links">
-                <h2>Contact Me</h2>
+                <h2>Contact Me
+                </h2>
                 <a href="mailto:kyliecrooker@hopeworks.org" title="Kyliecrooker@hopeworks.org" class="link"
                     target="_blank">Kyliecrooker@hopeworks.org</a>
                 <a href="tel:1-856-870-0296" title="(856)-870-0296" class="link" target="_blank">(856)-870-0296</a>
             </div>
             <div class="contact-form">
-                <p>SEND EMAIL</p>
-                <form class="contact-form" action="email.php" method="post">
-                    <input type="text" name="name" placeholder="Full name">
-                    <input type="text" name="mail" placeholder="Your e-mail">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Message"></textarea>
+                <p>Contact form</p>
+                <form action="email.php" method="post">
+                    <div class="contact-row">
+                        <input required type="text" name="name" placeholder="Full name">
+                        <input required type="text" name="mail" placeholder="Your e-mail">
+                    </div>
+                    <textarea required name="message" placeholder="Message"></textarea>
                     <button type="submit" name="submit">SEND MESSAGE</button>
                 </form>
+
+                <?php if (isset($_GET["mailsend"])) { ?>
+                <p class="notification success">Email sent!
+                    <?php } ?>
+                    <?php if (isset($_GET["failsend=nameEmpty"])) { ?>
+                <p class="notification">Success
+                <p>
+                    <?php } ?>
+
             </div>
             <hr>
             <div class="spotlight-links">
