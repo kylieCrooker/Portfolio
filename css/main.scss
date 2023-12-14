@@ -2,8 +2,11 @@
 
 $bodyColor: #034159;
 $textColor: white;
+$HeaderText: #0D0D0D;
 $nameTextDefault: #038C3E;
 $nameTextHover: #0CF25D;
+$menuColorLight: #02735E;
+$menuColorDark: #025951;
 
 #main {
     min-height: 60vh;
@@ -14,6 +17,7 @@ $nameTextHover: #0CF25D;
 hr {
     width: 80%;
     margin: 4px;
+    color: $nameTextDefault;
 }
 
 p {
@@ -154,24 +158,109 @@ body {
     width: 100%;
 }
 
+/*Contact form rules start*/
+
 .contact-form {
     margin: auto;
     width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: $menuColorLight;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .contact-form input {
-    width: 100%;
+    width: 300px;
     height: 2em;
-    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    background-color: $menuColorDark;
+    flex-grow: 1;
 }
 
 .contact-form textarea {
     width: 100%;
-    border-radius: 10px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
     height: 200px;
     resize: vertical;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: $menuColorDark;
 }
+
+.contact-form button {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    color: $HeaderText;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 24px;
+    background: none;
+    border-style: none;
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: $menuColorDark;
+    color: $nameTextHover;
+}
+
+.contact-form p {
+    color: $HeaderText;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.notification {
+    text-align: center;
+}
+
+.success {
+    color: $nameTextHover;
+}
+
+.error {
+    color: #f20c0c;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+/*Contact form rules end*/
 
 .contact-links {
     width: 60%;
