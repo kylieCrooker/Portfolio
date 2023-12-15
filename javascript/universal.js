@@ -25,3 +25,15 @@ function galleryFocus(imgs) {
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
 }
+
+window.onload = function loadVue() {
+    const app = Vue.createApp({
+        data() {
+            return {
+                showMenu: false
+            }
+        }
+    })
+    app.mount('#mobilenav')
+}
+
