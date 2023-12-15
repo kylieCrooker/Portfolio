@@ -135,7 +135,7 @@ nav.dropdown {
     display: flex;
   }
   .mobile {
-    display: none;
+    display: none !important;
   }
 }
 /* Responsive design rules end *//*# sourceMappingURL=header.css.map */
