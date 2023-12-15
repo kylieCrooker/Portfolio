@@ -58,6 +58,62 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+/*Styling rules for mobile dropdown menu start*/
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #0D0D0D;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+a.mobile {
+  display: block;
+  transition: 0.2s ease-in;
+  font-size: 32px;
+  color: #0D0D0D;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  border-radius: 0;
+}
+
+a.mobile-menu {
+  border-radius: 15px;
+}
+
+a.mobile:hover {
+  color: #0CF25D;
+  background-color: #025951;
+  transform: scale(1.1);
+}
+
+a.mobile:hover .bar {
+  background-color: #0CF25D;
+}
+
+a.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+a.change .bar2 {
+  opacity: 0;
+}
+
+a.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+nav.dropdown {
+  background: #02735E;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 95px;
+}
+
+/*Styling rules for mobile dropdown menu end*/
 /* Responsive design rules start */
 .desktop-block {
   display: none;
@@ -65,6 +121,10 @@ nav a:hover {
 
 .desktop-flex {
   display: none;
+}
+
+.mobile {
+  display: block;
 }
 
 @media only screen and (min-width: 1200px) {

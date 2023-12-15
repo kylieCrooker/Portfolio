@@ -65,6 +65,64 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/*Styling rules for mobile dropdown menu start*/
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: $HeaderText;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+a.mobile {
+    display: block;
+    transition: 0.2s ease-in;
+    font-size: 32px;
+    color: $HeaderText;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    border-radius: 0;
+}
+
+a.mobile-menu {
+    border-radius: 15px;
+}
+
+a.mobile:hover {
+    color: $logoText;
+    background-color: $menuColorDark;
+    transform: scale(1.1);
+}
+
+a.mobile:hover .bar {
+    background-color: $progressBarColor;
+}
+
+a.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+a.change .bar2 {
+    opacity: 0;
+}
+
+a.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+nav.dropdown {
+    background: $menuColorLight;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 95px;
+}
+
+/*Styling rules for mobile dropdown menu end*/
+
 /* Responsive design rules start */
 
 .desktop-block {
@@ -73,6 +131,10 @@ nav a:hover {
 
 .desktop-flex {
     display: none;
+}
+
+.mobile {
+    display: block;
 }
 
 @media only screen and (min-width: 1200px) {
