@@ -13,6 +13,20 @@
                 <a href="/examples.php" tabindex="0" title="Portfolio">Portfolio</a>
                 <a href="/contact.php" tabindex="0" title="Contact Me">Contact</a>
             </nav>
+            <div id="mobilenav">
+                <a id="dropdown" class="mobile mobile-menu" href="javascript:void(0);"
+                    v-on:click="showMenu = !showMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </a>
+                <nav class="dropdown" v-show="showMenu">
+                    <a class="mobile" href="/index.php" tabindex="0" title="Home">Home</a>
+                    <a class="mobile" href="/about.php" tabindex="0" title="About Me">About</a>
+                    <a class="mobile" href="/examples.php" tabindex="0" title="Portfolio">Portfolio</a>
+                    <a class="mobile" href="/contact.php" tabindex="0" title="Contact Me">Contact</a>
+                </nav>
+            </div>
         </div>
     </div>
     <div class="progress-container">
