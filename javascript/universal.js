@@ -18,14 +18,6 @@ function scrollProgress() {
     bar.style.width = scrolled + "%";
 };
 
-function galleryFocus(imgs) {
-    let expandImg = document.getElementById("zoom-gallery");
-    let imgText = document.getElementById("text-gallery");
-
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-}
-
 window.onload = function loadVue() {
     const app = Vue.createApp({
         data() {
