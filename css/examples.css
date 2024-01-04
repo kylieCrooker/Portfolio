@@ -27,7 +27,7 @@
 
 .example-text {
   height: 310px;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .date {
