@@ -71,7 +71,7 @@
             <h3 style="text-align: center;">Professional Links and Resume Download</h3>
             <hr>
             <div class="spotlight-links">
-                <a href="Kylie Crooker October 2023 Resume.pdf" target="_blank" title="My Resume" class="link"
+                <a href="Kylie Crooker Resume - September 2024.pdf" target="_blank" title="My Resume" class="link"
                     download="Kylie Crooker Resume - September 2024.pdf"><i class="fa-regular fa-file-lines"></i></a>
                 <a href="https://www.linkedin.com/in/kylie-crooker/" target="_blank" title="My LinkedIn" class="link"><i
                         class="fa-brands fa-linkedin"></i></a>
