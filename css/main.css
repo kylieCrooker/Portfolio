@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 #main {
   min-height: 60vh;
   margin: 30px 0;
@@ -14,7 +15,7 @@ hr {
 p {
   font-size: 20px;
   color: white;
-  font-family: "Mate", serif;
+  font-family: "Roboto", serif;
   text-shadow: 0.15rem 0.15rem 0.2rem black;
 }
 
@@ -101,6 +102,9 @@ h3 {
 
 .content-box-about p {
   margin: 8px 0 !important;
+  max-width: 720px;
+  text-indent: 50px;
+  word-spacing: 2px;
 }
 
 .content-box-examples {
@@ -276,4 +280,17 @@ body {
 
 .spotlight-links .link {
   font-size: 48px;
+}
+
+.link-box-general {
+  margin: auto;
+  max-width: 1080px;
+  padding: 0 1em;
+  height: 100%;
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
